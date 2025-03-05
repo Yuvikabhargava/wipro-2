@@ -1,0 +1,109 @@
+.userTable{
+    width: 60%;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 8px rgba(0,0,0.065);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50px;
+}
+.addButton{
+    text-decoration: none;
+    background-color: rgb(6, 6, 6);
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.userTable table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.userTable table thead{
+    background-color: rgb(149, 97, 80);
+    color: white;
+    padding: 10px;
+}
+.userTable table tbody td{
+    padding: 10px;
+    text-align: center;
+}
+.actionButton button{
+    border: 0;
+    outline: none;
+    background: rgb(123, 188, 58);
+    padding: 8px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.actionButton a{
+    background: rgb(107, 174, 112);
+    padding: 6px 15px;
+    color: white;
+    border-radius: 5px;
+    margin:5px 5px;
+
+}
+@media (max-width: 767px) {
+    .userTable table {
+      width: 60%; /* Adjust table width for smaller screens */
+    }
+  
+    .userTable th, .userTable td {
+      font-size: 8px; /* Adjust font size for smaller screens */
+      padding: 8px;
+    }
+  
+    .addButton {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  
+    .actionButton button {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  @media (max-width: 425px) {
+    .userTable table {
+      width: 50%; /* Adjust table width for screens 425px and below */
+    }
+  
+    .userTable th, .userTable td {
+      font-size: 8px; /* Adjust font size for smaller screens */
+      padding: 6px;
+    }
+  
+    .addButton {
+      font-size: 11px;
+      padding: 4px 8px;
+    }
+  
+    .actionButton button {
+      font-size: 11px;
+      padding: 4px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .userTable table {
+      width: 50%; /* Adjust table width for screens 375px and below */
+    }
+  
+    .userTable th, .userTable td {
+      font-size: 6px; /* Smaller font size for even smaller screens */
+      padding: 5px;
+    }
+  
+    .addButton {
+      font-size: 10px;
+      padding: 3px 6px;
+    }
+  
+    .actionButton button {
+      font-size: 10px;
+      padding: 3px;
+    }
+  }
