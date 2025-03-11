@@ -1,0 +1,43 @@
+﻿@model p2_day8_assignment.Models.Employee
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ID" />
+
+    <div class="form-group">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Date of Birth</label>
+        <input asp-for="DateOfBirth" type="date" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Date of Joining</label>
+        <input asp-for="DateOfJoining" type="date" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Salary</label>
+        <input asp-for="Salary" type="number" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Department</label>
+        <select asp-for="Dept" class="form-control">
+            <option>HR</option>
+            <option>Accts</option>
+            <option>IT</option>
+        </select>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>

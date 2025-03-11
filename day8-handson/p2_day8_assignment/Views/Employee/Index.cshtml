@@ -1,0 +1,42 @@
+﻿@model IEnumerable<p2_day8_assignment.Models.Employee>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<h2>Employee List</h2>
+<p>
+    <a asp-action="create" class="btn btn-primary">Add New Employee</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Date of Joining</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model){
+            <tr>
+                <td>@emp.ID</td>
+                <td>@emp.Name</td>
+                <td>@emp.DateOfBirth.ToShortDateString()</td>
+                <td>@emp.DateOfJoining.ToShortDateString()</td>
+                <td>@emp.Salary</td>
+                <td>@emp.Dept</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@emp.ID" class="btn btn-primary">Details</a>
+                    <a asp-action="Edit" asp-route-id="@emp.ID" class="btn btn-primary">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@emp.ID" class="btn btn-primary">Delete</a>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>
+
