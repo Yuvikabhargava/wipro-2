@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyMvcApp</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/First/Index1">First - Index1</a></li>
+                <li><a href="/Second/Index1">Second - Index1</a></li>
+                <li><a href="/hello">Middleware Hello</a></li>
+                <li><a href="/end">Terminate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - MyMvcApp</p>
+    </footer>
+</body>
+</html>
+
