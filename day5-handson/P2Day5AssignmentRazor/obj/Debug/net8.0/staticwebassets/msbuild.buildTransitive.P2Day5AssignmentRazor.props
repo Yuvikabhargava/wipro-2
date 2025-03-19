@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\P2Day5AssignmentRazor.props" />
+</Project>
